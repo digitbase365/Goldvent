@@ -83,6 +83,14 @@ ul li{
   position: relative; 
   margin-left: 5px;
 }  
+@media screen and (max-width: 499px){
+  .section-anim{ 
+    width: 7px;
+    height: 7px;  
+    margin-bottom: 4px; 
+    margin-left: 3px;
+  }  
+}
 .section-anim:nth-of-type(1){
   animation: anim1 2s infinite;
 }
@@ -126,9 +134,7 @@ ul li{
   100%{
     opacity: 1;
   }
-}
-
-
+} 
 .lite{
   color: #eff;
   position: relative;
@@ -837,7 +843,7 @@ p.slide-left{
   }
   .section-title{  
     font-size: 1.55rem;    
-  } 
+  }  
   p{
     color: var(--txt-color);
     font-size: .96rem;
@@ -1041,18 +1047,16 @@ p.slide-left{
 @media screen and (max-width: 499px) {
   #steps .container{
     width: 90%;
-    margin: 0 auto;
-    /* margin-left: var(--m-left);
-    margin-right: var(--m-left); */
+    margin: 0 auto; 
     display: flex;
     justify-content: space-between;   
     flex-direction: column;
   } 
   #steps .section-anim{  
     width: 12px;
-    height: 8px;  
-    margin-bottom: 6px; 
-    margin-left: 5px; 
+    height: 7px;  
+    margin-bottom: 5px; 
+    margin-right: 3px; 
     left: -60%;
   } 
   #steps .plan strong{
@@ -1060,14 +1064,14 @@ p.slide-left{
   }
   .sequence .box{
     position: relative;
-    width: 280px; 
+    width: 80%; 
     min-height: 100px;
   }
   .sequence .box:nth-child(2){
-    width: 300px;
+    width: 90%;
   } 
   .sequence .box:nth-child(3){
-    width: 320px;
+    width: 100%;
   } 
   .sequence .box .content .text h3{ 
     font-size: .95rem; 
@@ -1082,6 +1086,9 @@ p.slide-left{
     align-items: flex-start;  
     align-self: flex-start;
     margin-top: 7px;
+  }
+  .sequence .box:nth-of-type(1) .icon{
+    margin-top: 12px; 
   }
   
   .sequence .box .content .icon i{
@@ -1551,9 +1558,10 @@ p.slide-left{
     padding: 85px 0;    
     background-size: 45%;
   }
-  #core .container h2.section-title{
+  #core .container h2.section-title{ 
     font-size: 1.23rem;
     margin: 15px auto ;
+    margin-left: 3.5%;
   }
   #core .container .section-intro{
     max-width: 100%;  
@@ -1803,7 +1811,7 @@ p.slide-left{
     align-items: center;  
   } 
 
-  #testimonials .testRow .testItem img{
+  #testimonials .testRow .testItem > img{
     width: 110px;
     height: 110px;
   }
@@ -1827,17 +1835,7 @@ p.slide-left{
   #testimonials .testRow .testItem p span > img{ 
     width: 100%;
     height: 100%;
-  }
- span.star{
-    display: inline-block;
-    width: 110px;
-    height: 30px;
-    border: 1px solid white;
-  }
-  span.star img{
-    width: 100%;
-  }
-
+  }  
 } 
 
 /* COUNTUP STATS Ruleset */
@@ -1874,11 +1872,13 @@ p.slide-left{
 } 
 #strip .counter-grid .counter.percent{
   position: relative;
-  margin-right: 27px;
+  margin-right: 22px;
 }
 #strip .counter-grid .counter.percent::after{
   position: absolute;
   content: "%";
+  font-size: 1.2rem;
+  margin-top: 8px; 
 }
 #strip .stats{
   display: flex;
