@@ -1685,6 +1685,16 @@ p.slide-left{
   outline-offset: 2px;
   margin: 45px 0 10px;
 }
+#testimonials .testRow .testItem h3{
+  font-size: clamp(0.85rem, 0.1rem + 1vw, .9rem); 
+  font-style: italic;
+  padding-bottom: 0;
+}
+#testimonials .testRow .testItem h4{
+  font-size: clamp(0.65rem, 0.1rem + .25vw, .75rem); 
+  font-weight: 200;
+  margin-bottom: 10px;
+}
 #testimonials .testRow .testItem p{
   font-size: 18px;
   letter-spacing: 1px;
@@ -1718,12 +1728,7 @@ p.slide-left{
 }
 #testimonials .testRow .testItem p span img{
   width: 50%;
-}
-#testimonials .testRow .testItem h3{
-  font-size: 30px;
-  font-style: italic;
-  padding: 5px;
-}
+} 
 #testimonials .container span.next, #testimonials .container span.prev{
   position: absolute;
   top: 50%;
@@ -1787,7 +1792,7 @@ p.slide-left{
     margin-bottom: 5px; 
   }
   #testimonials .heading h1{
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
     margin-top: 2.5em;
     letter-spacing: .2px;
   }
@@ -1795,7 +1800,7 @@ p.slide-left{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;  
   } 
 
   #testimonials .testRow .testItem img{
@@ -1808,15 +1813,7 @@ p.slide-left{
     font-size: .9rem;  
     margin: 0 auto 7px; 
   }
-  #testimonials .testRow .testItem h3{
-    font-size: 1.1rem;
-    padding-bottom: 0;
-  }
-  #testimonials .testRow .testItem h4{
-    font-size: .8rem;
-    font-weight: 200;
-    margin-bottom: 10px;
-  }
+
   #testimonials .container span.next, #testimonials .container span.prev{
     padding: 10px;
   }
@@ -1830,6 +1827,15 @@ p.slide-left{
   #testimonials .testRow .testItem p span > img{ 
     width: 100%;
     height: 100%;
+  }
+ span.star{
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    border: 1px solid white;
+  }
+  span.star img{
+    width: 100%;
   }
 
 } 
