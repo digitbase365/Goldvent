@@ -6,9 +6,9 @@ html{
   --pri-color: #e4910c;
   --pri-color: #f09819;
   --acn-color: #eb2500;
-  --hdn-color: #1f3154;
-  --txt-color: #6e7a91;
+  --hdn-color: #1f3154; 
   --txt-color: #596d92;
+  --txt-color: #314367;
 
   --container: 112em;
   --m-auto: 0 auto;
@@ -41,7 +41,7 @@ a{
 }
 p{
   color: var(--txt-color);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.5;   
   font-weight: 200px;
   font-weight: 200;
@@ -56,8 +56,7 @@ ul li{
   width: fit-content;
   font-size: 2.25rem;
   margin-bottom: .45em;    
-  position: relative;  
-  color: #0B4F6C;
+  position: relative;   
   color: #052F5F;  
   display: flex;
   align-items: flex-end; 
@@ -229,8 +228,7 @@ header .circle .text p{
   font-family: 'Maven Pro', sans-serif; 
   text-transform: uppercase; 
   color: #fff;   
-  color: var(--hdn-color); 
-  /* text-shadow: 0px 0px 1px #45389d;  */
+  color: var(--hdn-color);  
 }
 @keyframes rotateBrand{
   0%{
@@ -336,30 +334,76 @@ header nav .act{
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
 
-.container .menu.hide-desktop{
+.container .hide-desktop{
   display: none;
-}
+} 
+
 /* END of DESKTOP HEADER Ruleset **************************************************/ 
 
 
  /* HEADER MOBILE RULESET *************************************************/
  @media screen and (max-width: 499px){
-  header{  
-    padding: 1px;
-    padding-left: 6px; 
-    padding-right: 7px; 
-    padding: 5px 7px 0px;
+  header{    
+    background-color: #fff;
+    padding: unset;
   } 
+  header .container{   
+    width: 100%;  
+    align-items: center; 
+    justify-content: space-between;
+    padding: 1%;
+    padding-left: 7%;
+  } 
+   
   header .container nav{
     display: none;
   }
   header .container .logo img{ 
     padding-top: 5px;
+    width: 100%;
   }
   .container .menu.hide-desktop{
     display: flex;
   }
-  
+  header .hide-desktop{
+    display: flex;
+  }
+  .container .hide-desktop{
+    display: flex;
+  }  
+  .hide-desktop.cac{
+    margin-left: 7.5%;
+  }
+.circle{  
+  width: initial;
+  height: initial;
+}
+.circle .logo{
+  position: absolute;
+  width: 50px;
+  height: 50px;  
+}  
+.circle .text{
+  display: none;
+}  
+  .scroll-up header .container .circle{ 
+    padding-top: 0;
+    width: 30px;
+    height: 30px; 
+  }
+  .scroll-up header .container .circle .logo{ 
+    width: 50px;
+    height: 50px;   
+  }  
+  .scroll-up header .container{   
+    align-items: center; 
+    padding-left: 3%;
+    padding-bottom: 1%; 
+  } 
+  .scroll-up .hide-desktop.cac{
+    margin-left: 3%;
+  }
+
   .menu{
     width: 45px;
     height: 35px; 
@@ -403,16 +447,7 @@ header nav .act{
   .menu.swish .burger::after{ 
     transform: rotate(-45deg) translate(35px, 35px);
   } 
-
-  .scroll-up header .container .circle{ 
-    padding-top: 0;
-    width: 30px;
-    height: 30px; 
-  }
-  .scroll-up header .container .circle .logo{ 
-    width: 50px;
-    height: 50px;   
-  } 
+   
 }
 
 /* END of MOBILE HEADER Ruleset ****************************************/
@@ -772,20 +807,20 @@ p.slide-left{
   margin: 20px 0 25px;
 } 
 #about .pedigree > div{
-  display: flex;
-  align-items: center;
+  display: flex; 
   margin-bottom: 1.5em;
 }
 #about .pedigree .tick{
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;  
   border-radius: 50%;
   box-shadow: 0 2px 10px 0 rgb(20 27 43 / 6%);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.09);
   margin-right: 1.5em; 
 } 
 .tick img{
-  width: 100%;
+  width: 50px;
+  height: auto;
 }
 #about .pedigree .content h3{
   font-size: 1.5rem;
@@ -873,6 +908,15 @@ p.slide-left{
   #about .pedigree .content h3{
     font-size: 1.25rem;
     margin-bottom: 3px; 
+  }
+  #about .pedigree .tick{
+    width: 40px;
+    height: 40px;   
+    margin-right: .7em; 
+  } 
+  .tick img{
+    width: 40px;
+    height: auto;
   }
   #about .pedigree .cta{ 
     opacity: 1;
@@ -1789,7 +1833,7 @@ p.slide-left{
 @media screen and (max-width: 550px) {
   #testimonials{   
     background-position: 0% 100%;  
-    margin-top: -60%;   
+    margin-top: -52%;   
   }  
   #testimonials > .container{ 
     width: 100%;
@@ -1836,6 +1880,13 @@ p.slide-left{
     width: 100%;
     height: 100%;
   }  
+  span.star{
+    display: inline-block; 
+    width: 75px;
+  }
+  span.star img{
+    width: 100%;
+  }
 } 
 
 /* COUNTUP STATS Ruleset */
@@ -2030,16 +2081,17 @@ p.slide-left{
     right: initial;
     transform: unset;
     transform: translateY(110px);
-    text-align: center; 
+    text-align: center;  
+    margin: 0 auto;
   }
   .map .world h1{  
     color: #052F5F;  
   }
   .map .world p{
-    max-width: 320px;
+    max-width: 320px; 
     margin-bottom: 10px; 
     font-weight: 400;
-    color: #052F5F;  
+    color: #052F5F;   
 
   }
   .map .world > img{  
@@ -2168,16 +2220,14 @@ footer #top .us span{
   color: var(--pri-color);
 }
 footer p, footer a{
-  font-size: .95rem; 
-  color: #757575;
-  color: #b1a4a4;
+  font-size: .95rem;  
+  color: #96a4b3; 
 }
 footer #bottom{
   display: flex;
   justify-content: space-between; 
   background: #151414 url(./img/hero/Map.svg) no-repeat top 80% center / contain; 
-  position: relative;
-  /* max-width: 85%; */
+  position: relative; 
   margin: 0 auto;
   padding: 5% 7.5%;
 } 
