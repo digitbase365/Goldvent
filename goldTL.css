@@ -6,9 +6,9 @@ html{
   --pri-color: #e4910c;
   --pri-color: #f09819;
   --acn-color: #eb2500;
-  --hdn-color: #1f3154; 
-  --txt-color: #596d92;
-  --txt-color: #314367;
+  --hdn-color: #1f3154;  
+  --txt-color: #314367;  
+  --txt-color: #030f28;  
 
   --container: 112em;
   --m-auto: 0 auto;
@@ -84,8 +84,8 @@ ul li{
 }  
 @media screen and (max-width: 499px){
   .section-anim{ 
-    width: 7px;
-    height: 7px;  
+    width: 5px;
+    height: 5px;  
     margin-bottom: 4px; 
     margin-left: 3px;
   }  
@@ -717,7 +717,7 @@ p.slide-left{
   .cta .btnx{  
     background-color: var(--acn-color);
     background-color: var(--pri-color); 
-    padding: 3px 0 4.5px;  
+    padding: 4.5px 0;  
   }
 
 }
@@ -878,6 +878,10 @@ p.slide-left{
   }
   .section-title{  
     font-size: 1.55rem;    
+  }  
+  #about .section-anim{   
+    margin-bottom: 5.5px; 
+    margin-left: 3px;
   }  
   p{
     color: var(--txt-color);
@@ -1844,10 +1848,13 @@ p.slide-left{
     margin-bottom: 5px; 
   }
   #testimonials .heading h1{
-    font-size: 1.25rem; 
-    margin-top: 2.5em;
+    font-size: 1.2rem;  
     letter-spacing: .2px;
   }
+  #testimonials .section-anim{  
+    margin-bottom: -.5px; 
+    margin-left: -3px;
+  }  
   #testimonials .testContainer{ 
     width: 100%;
     display: flex;
