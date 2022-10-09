@@ -228,3 +228,4 @@ var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
   });
 
 // END of Map market Script
+
