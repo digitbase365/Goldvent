@@ -30,14 +30,22 @@ item.forEach(link => {
 // Morphing Burger Icon{}
 let menu = document.querySelector('.menu')
 let burger = document.querySelector('.burger')
+let navlinks = document.querySelector('header nav')
+let head = document.querySelector('header')
 
 menu.addEventListener('click', ()=>{
    menu.classList.toggle('swish')
    burger.classList.toggle('swish')
+   navlinks.classList.toggle('swish')
+   head.classList.toggle('swish')
 })
 
 
 // End of Morphing Burger Icon{}
+
+// Mobile Menu Slide View
+
+// End of Mobile Menu Slide View
 
 // HEADER STICKY ON UP-SCROLL
 const body = document.body

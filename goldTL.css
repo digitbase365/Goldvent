@@ -7,17 +7,14 @@ html{
   --pri-color: #f09819;
   --acn-color: #eb2500;
   --hdn-color: #1f3154;   
-  --txt-color: #030f28;  
-rgb(1, 13, 39)
+  --txt-color: #030f28;   
   --container: 112em;
   --m-auto: 0 auto;
   --white: #fff;
   --bg-hero: #251c5a;
   --bg-counter: #2f2371;
   --bg-item: #5d46e2;
-  --m-left: 20px;
-
-
+  --m-left: 20px; 
 }
 @font-face {
   font-family: 'Baloo-2';
@@ -387,9 +384,7 @@ header nav .act{
   header .container{   
     width: 100%;  
     align-items: center; 
-    justify-content: space-between;
-    padding: 1%;
-    padding-left: 7%;
+    justify-content: space-between; 
   } 
    
   header .container nav{
@@ -408,8 +403,7 @@ header nav .act{
   .container .hide-desktop{
     display: flex;
   }  
-  .hide-desktop.cac{
-    margin-left: 7.5%;
+  .hide-desktop.cac{ 
     color: var(--bg-hero);
     color: #052F5F;
     color: #000066;
@@ -428,8 +422,8 @@ header nav .act{
 }  
   .scroll-up header .container .circle{ 
     padding-top: 0;
-    width: 30px;
-    height: 30px; 
+    width: 45px;
+    height: 45px; 
   }
   .scroll-up header .container .circle .logo{ 
     width: 50px;
@@ -437,7 +431,7 @@ header nav .act{
   }  
   .scroll-up header .container{   
     align-items: center; 
-    padding-left: 3%;
+    /* padding-left: 3%; */
     padding-bottom: 1%; 
   } 
   .scroll-up .hide-desktop.cac{
@@ -487,8 +481,81 @@ header nav .act{
   .menu.swish .burger::after{ 
     transform: rotate(-45deg) translate(35px, 35px);
   } 
+
+  /* Mobile Navigation */
+  header.swish{    
+    background-color: transparent;
+    padding: unset;
+  } 
+  header.swish .container{   
+    width: 100%;  
+    align-items: unset; 
+    justify-content: unset;
+    padding: 0; 
+    position: relative;
+  } 
+  header.swish .container nav{ 
+    display: flex;  
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start; 
+    background-color: #fff;
+    border-bottom-left-radius: 25px;
+    padding: 10px 0;  
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: relative;
+    right: -101%;
+    transition: right 2s ease-in; 
+    backdrop-filter: blur(4.5px) saturate(180%);
+    -webkit-backdrop-filter: blur(4.5px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.85); 
+    border: 1px solid rgba(255, 255, 255, .75);
+  } 
+  header.swish .container nav{
+    right: 0;
+  }
+  header.swish .container .menu{ 
+    position: absolute;
+    right: 10px;
+    top: 7px; 
+    margin-bottom: 50px;
+  }
+  header.swish .container nav .marker{ 
+    display: none;
+  }
+  header.swish nav a{
+    text-align: right;
+    color: #151515;
+    text-shadow: none;
+    padding: 1em 0;
+  }
+  header.swish nav a:first-of-type{
+    margin-top: 100px;
+  }
+  header.swish .hide{
+    display: none;
+  }
+  header.swish .cac span{
+    display: none;
+  }
+  .circle{
+    background-color: unset;
+  }
+  .swish .circle{
+    margin-right: 45px;
+  }
+  .circle .logo{
+    position: revert;
+  }
+
+  /* End of Mobile Navigation */
    
 }
+
+
 
 /* END of MOBILE HEADER Ruleset ****************************************/
 
@@ -610,7 +677,7 @@ header nav .act{
  
 /* Hero */
 #hero .container .slider .slide.slide1{
-  background: url(./img/hero/a1.jpg) no-repeat top 10% center / cover;
+  background: url(./img/hero/serv.jpg) no-repeat top 10% center / cover;
 }
 #hero .container .slider .slide.slide2{
   background: url(./img/hero/b1.jpg) no-repeat center center / cover;
@@ -788,8 +855,7 @@ p.slide-left{
   z-index: 1;
   bottom: 0;
   transform-origin: top left;
-  transform: skewY(-3deg);  
-
+  transform: skewY(-3deg);   
 } 
 #about aside{ 
   position: relative;
