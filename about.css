@@ -63,8 +63,7 @@ p.right{
   position: absolute;
 }
 
-.values .left.effect{
-  left: 0;
+.values .left.effect{ 
   left: -15%; 
   background-color: #f3f7fe;
 }
@@ -137,3 +136,58 @@ p.right{
   color: #636d8b;
   margin: 7px 0 18px;
 }
+
+/* MOBILE MEDIA QUERIES */
+@media screen and (max-width: 579px){ 
+  .banner{
+    min-height: 40vh;  
+    background: url(./img/about/bannr.jpg) no-repeat center center; 
+    background-size: 150%;
+  }
+  .preview img{  
+    width: 15%; 
+    right: 1%;
+    top: -55%;
+  }
+  .preview p{
+    margin-bottom: 2em;
+    width: unset;  
+  } 
+  .about-container{ 
+    margin: 32em 0 2em; 
+  }
+  .values .top{
+    max-width: 325px;  
+  }
+  .values .top h1{
+    font-size: 2rem; 
+  }
+  .values .top .effect{
+    width: 50px;
+    height: 50px;  
+  }
+  
+  .values .left.effect{
+    left: 0;
+    left: -5%; 
+    background-color: #f3f7fe;
+    /* background-color: #a5c95c; */
+  }
+   
+  .values .right.effect{
+    right: 0%;
+    top: -45%; 
+  }
+
+  .values .bottom{ 
+    max-width: 320px;
+    margin: 45px auto;
+    padding: 45px 0;   
+  }
+  .values .bottom .value-box{ 
+    flex-direction: column;
+    justify-content: space-between;  
+  } 
+}
+
+/* END OF MOBILE MEDIA QUERIES */

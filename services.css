@@ -160,6 +160,7 @@
   } 
   .banner h1.heading{ 
     padding: 0 1.25em .25em;
+    padding-left: .5em;
     font-size: 2rem;  
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     margin-bottom: 1em;  
