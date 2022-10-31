@@ -65,6 +65,7 @@
 .preview p{
   position: relative;
   z-index: 2;
+  margin-bottom: 20px;
 } 
 .service{
   display: flex;
@@ -150,3 +151,57 @@
   font-size: 1.35rem;
   font-weight: 700;
 }
+
+/* MOBILE MEDIA QUERIES */
+@media screen and (max-width: 579px){ 
+  .banner{
+    min-height: 40vh;     
+    background-size: 160%;
+  } 
+  .banner h1.heading{ 
+    padding: 0 1.25em .25em;
+    font-size: 2rem;  
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    margin-bottom: 1em;  
+  }
+  .preview{ 
+    padding: 10% 5%;  
+    color: #000;
+  }
+  .preview img{    
+    right: -1%;
+    top: -15%;
+    width: 25%;
+  }
+  .service-container .service{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+    position: relative;
+    padding: 7% 5%;
+  }
+  .service h2{
+    font-size: 1.42rem; 
+  }
+  .service .contentBx p{
+    font-size: 1.01rem; 
+  }
+  .service-cta{ 
+    padding: 3em 5%;  
+    text-align: center;
+  } 
+  .service-cta h1{ 
+    font-size: 1.5rem;
+  }
+  .service-cta a{ 
+    padding: .1em 1.25em;   
+    margin-top: 1em; 
+    height: 32px;
+    line-height: 1.45;   
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+}
+/* END OF MOBILE MEDIA QUERIES */
