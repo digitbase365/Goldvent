@@ -208,6 +208,7 @@ header{
 .scroll-up header nav .act{
   color: #fff;
 }
+
 .scroll-up header .circle .text{
   display: none;
 }
@@ -551,6 +552,7 @@ header nav .act{
     position: revert;
   }
 
+
   /* End of Mobile Navigation */
    
 }
@@ -797,6 +799,9 @@ p.slide-left{
 
 /* Hero MOBILE VERSION */
 @media screen and (max-width: 499px){
+  p{
+    font-weight: 400;
+  }
   #hero .container{ 
     height: 76vh;  
   }
