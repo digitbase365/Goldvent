@@ -10,7 +10,7 @@
   min-height: 60vh; 
   background: url(./img/services/bannr.jpg) no-repeat center center; 
   background: url(./img/services/jo.jpg) no-repeat bottom 20% center; 
-  background: url(./img/services/pex.jpg) no-repeat top 20% center; 
+  background: url(./img/services/pex.jpg) no-repeat top 20% center;  
   background-size: 100%;
   display: grid;
   align-items: flex-end;
