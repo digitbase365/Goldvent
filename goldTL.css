@@ -314,7 +314,7 @@ nav a{
     calc( var(--x-offset) - var(--stroke) )
     calc( var(--y-offset) + var(--stroke) )
     0px
-    var(--stroke-color);
+    var(--stroke-color); 
 }
 nav a:active{
   color: gold;
@@ -390,6 +390,17 @@ header nav .act{
    
   header .container nav{
     display: none;
+  }
+  nav a{  
+    width: 100%;
+    padding: 0;
+    margin: 0;   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav a img{
+    padding: 0 10px; 
   }
   header .container .logo img{ 
     padding-top: 5px;
