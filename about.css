@@ -6,6 +6,9 @@
   --hdn-color: #1f3154;   
   --txt-color: #030f28;  
 }
+html{
+  scroll-behavior: smooth; 
+} 
 *{
   margin: 0;
   padding: 0;
@@ -108,6 +111,9 @@ p.right{
   justify-content: space-between;
   gap: 25px;
 } 
+.values .bottom .value-box > div{
+  flex-basis: 100%;
+}
 .values .bottom .value-box .bx img{ 
   width: 50px;
   height: auto;
@@ -126,7 +132,7 @@ p.right{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .values .bottom .value-box .bx p{
-  font-size: 1.1rem;
+  font-size: .96rem;
   line-height: 1.25;
 }
 .values .bottom .value-box .bx h4{

@@ -6,6 +6,9 @@
   --hdn-color: #1f3154;   
   --txt-color: #030f28;  
 }
+html{
+  scroll-behavior: smooth; 
+} 
 .banner{
   min-height: 60vh; 
   background: url(./img/services/bannr.jpg) no-repeat center center; 
@@ -85,6 +88,7 @@
 }
 .service h2{
   font-size: 2.2rem;
+  margin-bottom: .5em;
   color: var(--hdn-color);
 }
 .service .contentBx{
@@ -100,6 +104,7 @@
 .service .contentBx p{
   font-size: 1.15rem;
   margin-bottom: 10px;
+  line-height: 1.75;
 }
 .service .imgBx{
   flex-basis: 45%;
@@ -182,7 +187,7 @@
     position: relative;
     padding: 7% 5%;
   }
-  .service h2{
+  .service-container .service h2{
     font-size: 1.42rem; 
   }
   .service .contentBx p{
